@@ -14,3 +14,12 @@
   fun:memmove
   fun:flo_to_s
 }
+{
+  <make_valid_false_positive>
+  Memcheck:Leak
+  ...
+  fun:GEOSMakeValidParams_create_r
+  fun:method_geometry_make_valid
+  ...
+  fun:main
+}
